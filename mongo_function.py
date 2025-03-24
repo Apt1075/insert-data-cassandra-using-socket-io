@@ -6,8 +6,8 @@ def get_trip_data(vendor):
     try:
         response = []
         condition = []
-        # url = 'http://44.196.201.229/secutrak_local_mongo/access/v0.1/selectQuery'
-        url = "http://backend-api.secutrak.in/secutrak_model_mongo/access/v0.1/selectQuery"
+        # url = ''
+        url = ""
 
         payload={'conditions': '{ "trip_status":1,"group_id":"5682","gps_vendor_name":"'+vendor+'"}',"table": "courier_trip_detail","fields": '{}'}
         # print(payload)
